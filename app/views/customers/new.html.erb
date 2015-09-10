@@ -1,0 +1,15 @@
+<%= form_for :customer, url: customers_path do |f| %>
+  <p>
+    <%= f.label :phonenumber %><br>
+    <%= f.text_field :phonenumber %>
+  </p>
+ 
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

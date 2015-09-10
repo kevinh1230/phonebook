@@ -1,0 +1,15 @@
+<h1> Listing Customers </h1>
+
+<table>
+  <tr>
+    <th> Phone Number </th>
+    <th> Address </th>
+  </tr>
+
+<% @customers.each do |customer| %>
+  <tr>
+    <td><%= customer.phonenumber %></td>
+    <td><%= customer.address %></td>
+  </tr>
+  <% end %>
+ </table>
