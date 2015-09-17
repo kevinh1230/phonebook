@@ -8,5 +8,12 @@
   <%= @customer.address %>
 </p>
 
+<h2>Previous Orders</h2>
+<%= render @customer.orders %>
+
+<h2>Add an order</h2>
+<%= render 'orders/form' %>
+
+
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>

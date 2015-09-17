@@ -1,0 +1,10 @@
+<p>
+  <strong>Order <%= order.id %>:</strong>
+  <%= order.order %>
+</p>
+
+<p>
+  <%= link_to 'Delete Order', [order.customer, order],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</p>
