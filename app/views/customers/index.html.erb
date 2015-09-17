@@ -2,14 +2,17 @@
 
 <table>
   <tr>
-    <th> Phone Number </th>
-    <th> Address </th>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="2"></th>
   </tr>
-
-<% @customers.each do |customer| %>
-  <tr>
-    <td><%= customer.phonenumber %></td>
-    <td><%= customer.address %></td>
-  </tr>
+ 
+  <% @customers.each do |customer| %>
+    <tr>
+      <td><%= customer.phonenumber %></td>
+      <td><%= customer.address %></td>
+      <td><%= link_to 'Show', customer_path(customer) %></td>
+      <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+    </tr>
   <% end %>
- </table>
+</table>
