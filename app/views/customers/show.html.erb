@@ -14,6 +14,8 @@
 <h2>Add an order</h2>
 <%= render 'orders/form' %>
 
-
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= link_to 'Back', customers_path %> |
+<%= link_to 'Destroy', customer_path(@customer),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %>
