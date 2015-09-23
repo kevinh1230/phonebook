@@ -6,7 +6,7 @@ class CustomersController < ApplicationController
 		if @customer = Customer.find_by_phonenumber(params[:phonenumber])
 			redirect_to @customer
     else
-      printf("Not Working")
+      render 'index'
 		end
 	end
 
