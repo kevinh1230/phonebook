@@ -3,7 +3,11 @@ class CustomersController < ApplicationController
 	http_basic_authenticate_with name: "kevin", password: "kevin"
 
 	def index
-		@customers = Customer.all
+		if @customer = Customer.find_by_phonenumber(params[:phonenumber])
+			redirect_to @customer
+    else
+      printf("Not Working")
+		end
 	end
 
 	def show
