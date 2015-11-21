@@ -1,28 +1,7 @@
-== README
+Basic phonebook application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To run:
+1. Run migrations with command <code> rake db:migrate </code>
+2. Start server with <code> rails server </code>
+3. Go to localhost:3000
+4. Login with user: kevin pw: kevin
