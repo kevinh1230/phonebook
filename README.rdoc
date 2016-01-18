@@ -7,7 +7,8 @@ To run:
 4. Login with user: kevin pw: kevin
 
 To deploy with Docker:
-1. Run docker image with <code> docker run -d phonebookdocker </code>
-2. Find container id with <code> sudo docker ps </code>
-3. Find ip with <code> sudo docker ps <containerid>  </code>
-4. Go to web browser and type <containerid>:3000
+1. Build docker image with <code> sudo docker build -t phonebookdocker . </code>
+2. Run docker image with <code> docker run -d phonebookdocker </code>
+3. Find container id with <code> sudo docker ps </code>
+4. Find ip with <code> sudo docker ps <containerid>  </code>
+5. Go to web browser and type <containerid>:3000
