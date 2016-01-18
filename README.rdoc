@@ -8,6 +8,6 @@ To run:
 
 To deploy with Docker:
 1. Run docker image with <code> docker run -d phonebookdocker </code>
-2. Find container id <code> sudo docker ps </code>
-3. Find ip <code> sudo docker ps <containerid>  </code>
+2. Find container id with <code> sudo docker ps </code>
+3. Find ip with <code> sudo docker ps <containerid>  </code>
 4. Go to web browser and type <containerid>:3000
