@@ -5,3 +5,9 @@ To run:
 2. Start server with <code> rails server </code>
 3. Go to localhost:3000
 4. Login with user: kevin pw: kevin
+
+To deploy with Docker:
+1. Run docker image with <code> docker run -d phonebookdocker </code>
+2. Find container id <code> sudo docker ps </code>
+3. Find ip <code> sudo docker ps <containerid>  </code>
+4. Go to web browser and type <containerid>:3000
